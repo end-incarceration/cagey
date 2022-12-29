@@ -1,4 +1,4 @@
-from slick.model import BaseModel, get_engine
+from cagey.slick.model import BaseModel, get_engine
 from sqlalchemy import Column, Date, ForeignKey, Integer, String, Time
 from sqlalchemy.orm import backref, relationship
 

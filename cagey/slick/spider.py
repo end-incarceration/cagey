@@ -1,4 +1,4 @@
-from slick import model
+from cagey.slick import model
 from metrics import get_engine
 
 

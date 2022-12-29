@@ -5,7 +5,7 @@ import json
 import logging
 import os
 import scrapy
-from slick import parser, item
+from cagey.slick import parser, item
 import sqlalchemy
 from sqlalchemy.ext.declarative import declarative_base
 

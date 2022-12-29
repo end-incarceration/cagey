@@ -1,7 +1,7 @@
 import importlib
 import inspect
 
-from slick import model, item
+from cagey.slick import model, item
 
 import scrapy
 

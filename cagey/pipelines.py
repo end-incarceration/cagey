@@ -1,4 +1,4 @@
-from slick.pipeline import DBPipeline
+from cagey.slick.pipeline import DBPipeline
 
 
 class CageyPipeline(DBPipeline):

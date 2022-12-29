@@ -2,7 +2,7 @@
 import inspect
 from scrapy.exceptions import DropItem
 
-from slick import model
+from cagey.slick import model
 
 ITEM_CLASS_ATTRIBUTE = "_item_classes"
 

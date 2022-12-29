@@ -1,5 +1,5 @@
 from cagey import models
-from slick import item, model, parser
+from cagey.slick import item, model, parser
 
 PersonItem = model.realize_item_class('PersonItem', models.Person)
 PersonItem._dedup_attribute = 'id'
