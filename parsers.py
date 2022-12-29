@@ -14,7 +14,7 @@ def parse_date(text):
         date = parser.parse(text)
     except:
         return None
-    return date
+    return date.date()
 
 
 def strip(text):

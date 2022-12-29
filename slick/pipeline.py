@@ -72,6 +72,8 @@ class DBPipeline(object):
 
     def open_spider(self, spider, db_filename):
         """opens db connection"""
+        spider.pipeline = self
+
         try:
             super(DBPipeline, self).open_spider(spider)
         except AttributeError:

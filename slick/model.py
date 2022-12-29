@@ -229,6 +229,9 @@ def sqlalchemy_column_to_field(col, processors=None):
     elif isinstance(_type, sqlalchemy.DateTime):
         pass
 
+    elif isinstance(_type, sqlalchemy.Date):
+        pass
+
     else:
         raise NotImplementedError(f"Missing column to field mapping for {col}-{_type}")
 
@@ -290,13 +293,7 @@ def insert(db, realized_model, the_item, logger=logger, **kwargs):
     # assign to processed to returned item
     # out['related'][related_attr] = obj.as_dict()
 
-    try:
-        db.commit()
-    except sqlalchemy.exc.SQLAlchemyError:
-        db.logger()
-        if logger:
-            logger.exception(f"couldn't insert {the_item}")
-
+    db.commit()
     return realized_model
 
 
